@@ -13,13 +13,13 @@ const Splash = ()=>{
             setTimeout(()=>{
                 Navigation.navigate("Login");
                 setIsGo(false);
-            },2000);
+            },3000);
         }
     });
 
     return (
-        <View style={{flex:1,justifyContent:'center',alignItems:'center',backgroundColor:"#fff"}}>
-            <Image source={require('../../assets/images/logo.png')} style={{width:150,height:50}}/>
+        <View style={{flex:1,justifyContent:'center',alignItems:'center',backgroundColor:"#7466FF"}}>
+            <Image source={require('../../assets/images/logo.png')} style={{width:170,height:70}}/>
             <Text style={{fontSize:24,textAlign:'center',fontWeight:'bold'}}>My First App</Text>
         </View>
     )

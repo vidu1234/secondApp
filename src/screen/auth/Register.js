@@ -9,26 +9,24 @@ const Register = ()=>{
     return (
         <SafeAreaView>
             <ScrollView>
-                <View style={styles.container}>
-                    <ImageBackground style={styles.defaultBg} resizeMode={'cover'} source={require('../../assets/images/auth_bg.png')}/>
-                </View>
+                
                 <View style={{padding:10}}>
                     <View style={styles.formInput}>
-                        <View style={{justifyContent:'center',alignItems:'center'}}>
+                        <View style={{justifyContent:'center',alignItems:'center', marginTop: 100}}>
                             <Image source={require('../../assets/images/logo.png')} resizeMode={'contain'} style={{width:'100%',height:60}}/>
                         </View>
                     </View>
                     <View style={styles.formInput}>
-                        <TextInput style={styles.textInput} placeholder="Your Full Name"/>
+                        <TextInput style={styles.textInput} placeholder="Your Full Name" placeholderTextColor = "#9B9B9B"/>
                     </View>
                     <View style={styles.formInput}>
-                        <TextInput style={styles.textInput} placeholder="Your email address"/>
+                        <TextInput style={styles.textInput} placeholder="Your email address" placeholderTextColor = "#9B9B9B"/>
                     </View>
                     <View style={styles.formInput}>
-                        <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true}/>
+                        <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true} placeholderTextColor = "#9B9B9B"/>
                     </View>
                     <View style={styles.formInput}>
-                        <TextInput style={styles.textInput} placeholder="Confirm Password" secureTextEntry={true}/>
+                        <TextInput style={styles.textInput} placeholder="Confirm Password" secureTextEntry={true} placeholderTextColor = "#9B9B9B"/>
                     </View>
                    
                     <View style={styles.formInput}>
@@ -54,18 +52,20 @@ const Register = ()=>{
 const styles=StyleSheet.create({
     container:{
         flex:1
-    },defaultBg:{
-        width:'100%',
-        height:120
+    
     },formInput:{
         marginTop:10,
         padding:10,
+        placeholderTextColor: '#00000'
+        
     },textInput:{
         padding:10,
         fontSize:16,
         borderWidth:1,
         borderColor:"#a7a7a7",
-        borderRadius:10
+        borderRadius:10,
+        color: '#000000',
+        
     },defaultButton:{
         padding:15,
         backgroundColor:'#14b53f',

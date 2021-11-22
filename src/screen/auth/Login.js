@@ -9,24 +9,22 @@ const Login = ()=>{
     return (
         <SafeAreaView>
             <ScrollView>
-                <View style={styles.container}>
-                    <ImageBackground style={styles.defaultBg} resizeMode={'cover'} source={require('../../assets/images/auth_bg.png')}/>
-                </View>
+                
                 <View style={{padding:10,backgroundColor:'#fff'}}>
                     <View style={styles.formInput}>
-                        <View style={{justifyContent:'center',alignItems:'center'}}>
+                        <View style={{justifyContent:'center',alignItems:'center', marginTop: 170}}>
                             <Image source={require('../../assets/images/logo.png')} resizeMode={'contain'} style={{width:'100%',height:60}}/>
                         </View>
                     </View>
                     <View style={styles.formInput}>
-                        <TextInput style={styles.textInput} placeholder="Your email address"/>
+                        <TextInput style={styles.textInput} placeholder="Your email address" placeholderTextColor = "#9B9B9B"/>
                     </View>
                     <View style={styles.formInput}>
-                        <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true}/>
+                        <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true} placeholderTextColor = "#9B9B9B"/>
                     </View>
                     <View style={styles.formInput}>
                         <TouchableOpacity onPress={()=>{ naviation.navigate("Forget") }}>
-                            <Text style={{color:"#db2218",textAlign:'right',fontSize:16,fontWeight:'bold'}}>Forgot password?</Text>
+                            <Text style={{color:"#9fa9a3",textAlign:'right',fontSize:16,fontWeight:'bold'}}>Forgot password?</Text>
                         </TouchableOpacity>
                     </View>
                     <View style={styles.formInput}>
@@ -52,7 +50,7 @@ const Login = ()=>{
                     </View>
                     <View style={styles.formInput}>
                         <TouchableOpacity onPress={()=>naviation.navigate("Register")}>
-                            <Text style={{color:"#14b53f",textAlign:'center',fontSize:16,fontWeight:'bold'}}>Need Account ? Register now</Text>
+                            <Text style={{color:"#9fa9a3",textAlign:'center',fontSize:16,fontWeight:'bold'}}>Need Account ? Register now</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -64,9 +62,7 @@ const Login = ()=>{
 const styles=StyleSheet.create({
     container:{
         flex:1
-    },defaultBg:{
-        width:'100%',
-        height:120
+    
     },formInput:{
         marginTop:10,
         padding:10,
@@ -75,7 +71,8 @@ const styles=StyleSheet.create({
         fontSize:16,
         borderWidth:1,
         borderColor:"#a7a7a7",
-        borderRadius:10
+        borderRadius:10,
+        color: '#000000'
     },defaultButton:{
         padding:15,
         backgroundColor:'#4287f5',
