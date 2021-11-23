@@ -7,24 +7,24 @@ const Login = ()=>{
     const naviation=useNavigation();
 
     return (
-        <SafeAreaView>
-            <ScrollView>
+        <SafeAreaView >
+            <ScrollView >
                 
-                <View style={{padding:10,backgroundColor:'#fff'}}>
+                <View style={styles.container}>
                     <View style={styles.formInput}>
-                        <View style={{justifyContent:'center',alignItems:'center', marginTop: 170}}>
+                        <View style={{justifyContent:'center',alignItems:'center', marginTop: 165}}>
                             <Image source={require('../../assets/images/logo.png')} resizeMode={'contain'} style={{width:'100%',height:60}}/>
                         </View>
                     </View>
                     <View style={styles.formInput}>
-                        <TextInput style={styles.textInput} placeholder="Your email address" placeholderTextColor = "#9B9B9B"/>
+                        <TextInput style={styles.textInput} placeholder="Your email address" placeholderTextColor = "#747475"/>
                     </View>
                     <View style={styles.formInput}>
-                        <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true} placeholderTextColor = "#9B9B9B"/>
+                        <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true} placeholderTextColor = "#747475"/>
                     </View>
                     <View style={styles.formInput}>
                         <TouchableOpacity onPress={()=>{ naviation.navigate("Forget") }}>
-                            <Text style={{color:"#9fa9a3",textAlign:'right',fontSize:16,fontWeight:'bold'}}>Forgot password?</Text>
+                            <Text style={{color:"#9fa9a3",textAlign:'right',fontSize:16,fontWeight:'400'}}>Forgot password?</Text>
                         </TouchableOpacity>
                     </View>
                     <View style={styles.formInput}>
@@ -33,7 +33,7 @@ const Login = ()=>{
                         </TouchableOpacity>
                     </View>
                     <View style={styles.formInput}>
-                        <Text style={{textAlign:'center'}}>or</Text>
+                        <Text style={{textAlign:'center', color: '#fff'}}>or</Text>
                     </View>
                     <View style={styles.formInput}>
                         <View style={{justifyContent:'center',alignItems:'center',flexDirection:'row'}}>
@@ -61,7 +61,13 @@ const Login = ()=>{
 
 const styles=StyleSheet.create({
     container:{
-        flex:1
+        flex:1,
+        padding:10, 
+        backgroundColor:'#1B191D',
+        width: '100%',
+        height: '100%'
+        
+
     
     },formInput:{
         marginTop:10,
@@ -69,10 +75,12 @@ const styles=StyleSheet.create({
     },textInput:{
         padding:10,
         fontSize:16,
-        borderWidth:1,
+        borderWidth: 0.2,
         borderColor:"#a7a7a7",
-        borderRadius:10,
-        color: '#000000'
+        borderRadius:5,
+        color: '#fff',
+        
+        
     },defaultButton:{
         padding:15,
         backgroundColor:'#4287f5',

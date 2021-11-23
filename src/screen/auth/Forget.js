@@ -10,9 +10,9 @@ const Forget = ()=>{
         <SafeAreaView>
             <ScrollView>
                 
-                <View style={{padding:10}}>
+                <View style={{padding:10, backgroundColor:'#1B191D'}}>
                     <View style={styles.formInput}>
-                        <View style={{justifyContent:'center',alignItems:'center', marginTop: 150}}>
+                        <View style={{justifyContent:'center',alignItems:'center', marginTop: 150, marginBottom: 70}}>
                             <Image source={require('../../assets/images/logo.png')} resizeMode={'contain'} style={{width:'100%',height:60}}/>
                         </View>
                     </View>
@@ -32,7 +32,7 @@ const Forget = ()=>{
                     </View>
                     <View style={styles.formInput}>
                         <TouchableOpacity onPress={()=>{navigation.navigate("Login")}}>
-                            <Text style={{color:"#4287f5",textAlign:'center',fontSize:16,fontWeight:'bold'}}>Already Have Account? Login</Text>
+                            <Text style={{color:"#4287f5",textAlign:'center',fontSize:16,fontWeight:'bold', marginBottom: 195}}>Already Have Account? Login</Text>
                         </TouchableOpacity>
                     </View>
                 </View>

@@ -7,10 +7,10 @@ const Register = ()=>{
     const navigation=useNavigation();
 
     return (
-        <SafeAreaView>
-            <ScrollView>
+        <SafeAreaView >
+            <ScrollView >
                 
-                <View style={{padding:10}}>
+                <View style={{padding:10, backgroundColor:'#1B191D'}}>
                     <View style={styles.formInput}>
                         <View style={{justifyContent:'center',alignItems:'center', marginTop: 100}}>
                             <Image source={require('../../assets/images/logo.png')} resizeMode={'contain'} style={{width:'100%',height:60}}/>
@@ -40,7 +40,7 @@ const Register = ()=>{
                     </View>
                     <View style={styles.formInput}>
                         <TouchableOpacity onPress={()=>{navigation.navigate("Login")}}>
-                            <Text style={{color:"#4287f5",textAlign:'center',fontSize:16,fontWeight:'bold'}}>Already Have Account ? Login</Text>
+                            <Text style={{color:"#4287f5",textAlign:'center',fontSize:16,fontWeight:'bold', marginBottom: 80}}>Already Have Account ? Login</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -61,9 +61,9 @@ const styles=StyleSheet.create({
     },textInput:{
         padding:10,
         fontSize:16,
-        borderWidth:1,
+        borderWidth:0.2,
         borderColor:"#a7a7a7",
-        borderRadius:10,
+        borderRadius:5,
         color: '#000000',
         
     },defaultButton:{
